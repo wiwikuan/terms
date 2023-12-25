@@ -6,12 +6,17 @@
     <style>
         h3 {
             margin-top: 12px;
-            margin-bottom: 12px;
+            margin-bottom: 2px;
         }
         input[type="text"] {
             font-size: 18px;
             padding: 5px;
             width: 350px;
+        }
+        #source{
+            margin-top: 0px;
+            margin-bottom: 12px;
+            font-size: 9pt;
         }
         #results{
             font-size: 12pt;
@@ -17720,7 +17725,7 @@ NiceChord 好和弦`; // Add your CSV data here
 
             // 空的話就不搜尋了
             if (input === '') {
-                document.getElementById('results').innerHTML = '喜歡這個工具的話，請多到 <a href="https://nicechord.com">NiceChord.com</a> 逛逛喔！';
+                document.getElementById('results').innerHTML = '喜歡這個工具的話，請多到 <a href="https://nicechord.com" target="_blank">NiceChord.com</a> 逛逛喔！';
                 return;
             }
 
@@ -17742,7 +17747,8 @@ NiceChord 好和弦`; // Add your CSV data here
     </script>
 </head>
 <body>
-    <h3>不囉唆的音樂名詞查詢器 by NiceChord | 資料來源：國家教育研究院（<a href="https://terms.naer.edu.tw/mysite/about/2/" target="_blank">授權條款</a>）</h3>
+    <h3>不囉唆的音樂名詞查詢器 by <a href="https://nicechord.com" target="_blank">NiceChord 好和弦</a></h3>
+    <p id="source">資料來源：國家教育研究院</p>
     <input type="text" id="searchInput" oninput="searchCSV()" placeholder="輸入任何音樂名詞（中文或外文）">
     <div id="results"></div>
 </body>
