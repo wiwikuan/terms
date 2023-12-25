@@ -2,25 +2,53 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>不囉唆的音樂名詞查詢器 by NiceChord</title>
     <style>
+        html {
+            font-size: 1.2rem; /* Default font size */
+        }
+
         h3 {
+            font-size: 1.2rem; 
             margin-top: 12px;
             margin-bottom: 2px;
         }
+
         input[type="text"] {
-            font-size: 18px;
+            font-size: 1rem; 
             padding: 5px;
-            width: 350px;
+            width: 80%; 
+            max-width: 350px;
         }
-        #source{
+
+        #source {
             margin-top: 0px;
             margin-bottom: 12px;
-            font-size: 9pt;
+            font-size: 0.7rem; 
         }
-        #results{
-            font-size: 12pt;
+
+        #results {
+            width: 90%;
+            max-width: 600px;
+            font-size: 1rem; 
             margin-top: 10px;
+        }
+    
+       
+        @media (max-width: 600px) {
+            h3, input[type="text"], #results {
+                font-size: 0.9rem;
+                width: 95%; 
+            }
+
+            #source {
+                font-size: 0.7rem; 
+            }
+
+            input[type="text"] {
+                max-width: 90%;
+            }
         }
     </style>
     <script>
