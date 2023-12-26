@@ -4,7 +4,7 @@
 
 到這裡直接用：[https://NiceChord.com/terms/](https://nicechord.com/terms/)
 
-全部資訊都包在一個 HTML 檔案中，想要離線使用的話，直接另存網頁即可！
+全部資訊都包在一個 HTML 檔案中，想要離線使用的話，直接另存網頁即可！只要 359 KB 而已，超小的啦！
 
 資料來源為國家教育研究院，依照[授權條款](https://terms.naer.edu.tw/mysite/about/2/)使用。
 
