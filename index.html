@@ -73,8 +73,12 @@
         // 用 pako 解壓縮
         var csvData = pako.inflate(uintArray, { to: 'string' });
 
-        // 文字框改變時 call searchCSV()
+        // CSV 資料預處理
+        var lines = csvData.split('\n').map(function(line) {
+            return removeAccents(line.toLowerCase());
+        });
 
+        // 文字框改變時 call searchCSV()
         function searchCSV() {
             var input = removeAccents(document.getElementById('searchInput').value.toLowerCase());
 
@@ -84,13 +88,11 @@
                 return;
             }
 
-            var lines = csvData.split('\n');
             var matchingLines = '';
 
             // 搜尋每一行
             for (var i = 0; i < lines.length; i++) {
-                var line = removeAccents(lines[i].toLowerCase());
-                if (line.includes(input)) {
+                if (lines[i].includes(input)) {
                     matchingLines += lines[i] + '<br>';
                 }
             }
