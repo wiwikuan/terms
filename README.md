@@ -4,8 +4,10 @@
 
 到這裡直接用：[https://NiceChord.com/terms/](https://nicechord.com/terms/)
 
-https://github.com/wiwikuan/terms/assets/4676714/bd8f73de-feeb-43cb-90af-d7df09f777a6
-
 全部資訊都包在一個 HTML 檔案中，想要離線使用的話，直接另存網頁即可！
 
 資料來源為國家教育研究院，依照[授權條款](https://terms.naer.edu.tw/mysite/about/2/)使用。
+
+https://github.com/wiwikuan/terms/assets/4676714/bd8f73de-feeb-43cb-90af-d7df09f777a6
+
+
