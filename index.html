@@ -74,8 +74,8 @@
         var csvData = pako.inflate(uintArray, { to: 'string' });
 
         // CSV 資料預處理
-        var lines = csvData.split('\n').map(function(line) {
-            return removeAccents(line.toLowerCase());
+        var lines = csvData.split('\n').map(line => {
+            return [removeAccents(line.toLowerCase()), line];
         });
 
         // 文字框改變時 call searchCSV()
@@ -92,8 +92,8 @@
 
             // 搜尋每一行
             for (var i = 0; i < lines.length; i++) {
-                if (lines[i].includes(input)) {
-                    matchingLines += lines[i] + '<br>';
+                if (lines[i][0].includes(input)) {
+                    matchingLines += lines[i][1] + '<br>';
                 }
             }
 
