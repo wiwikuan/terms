@@ -92,7 +92,7 @@
 
             // 搜尋每一行
             for (var i = 0; i < lines.length; i++) {
-                if (lines[i][0].includes(input)) {
+                if (lines[i][0].includes(input.trim())) {
                     matchingLines += lines[i][1] + '<br>';
                 }
             }
